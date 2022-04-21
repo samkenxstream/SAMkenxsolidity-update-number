@@ -1,0 +1,51 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.navbar {
+  background-color: gray;
+  color: antiquewhite;
+  min-height: 62px;
+  padding: 10px 20px;
+  .nav-item {
+    margin-left: 10px;
+  }
+  a {
+    &:hover {
+      color: rgb(163, 162, 162);
+    }
+  }
+  .nav-link {
+    margin-right: 10px;
+  }
+  button {
+    &:hover {
+      background-color: rgb(163, 162, 162);
+    }
+  }
+}
+
+.btn {
+  @apply px-3 py-1 border rounded mx-2 my-1;
+  &.btn-primary {
+    @apply bg-sky-600 text-white hover:bg-sky-700;
+  }
+}
+
+form {
+
+  // Floating input
+  .input-float {
+    @apply block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600;
+    // @apply dark:text-white dark:border-gray-600 dark:focus:border-blue-500
+  }
+  .label-float {
+    @apply absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0];
+  }
+  .input-float:placeholder-shown + .label-float {
+    @apply scale-100 translate-y-0
+  }
+  .input-float:hover + .label-float {
+    @apply left-0 text-blue-600 dark:text-blue-500  scale-75 -translate-y-6
+  }
+}
