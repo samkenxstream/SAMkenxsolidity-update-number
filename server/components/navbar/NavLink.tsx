@@ -11,12 +11,12 @@ const NavLink: React.FC<Props> = ({ className }) => {
   return (
     <ul className={`lg:flex ${className || ""}`}>
       <li className="nav-item">
-        <Link
+        {/* <Link
           href="/upload"
           text={"uploadNft"}
           className={`nav-link ${active["/upload"]}`}
           aria-current="page"
-        ></Link>
+        ></Link> */}
       </li>
     </ul>
   );
