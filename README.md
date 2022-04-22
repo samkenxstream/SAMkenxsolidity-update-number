@@ -36,8 +36,10 @@ To interact with the contract, you need to be connected to the local testnet.
 ## Metamask
 
 Configure your metamask network like this : 
-```bash
-  New RPC URL: HTTP://127.0.0.1:7545
-  Chain ID: 1337
-  Currency Symbol: CPAY
+```json
+  {
+    "New RPC URL": "HTTP://127.0.0.1:7545",
+    "Chain ID": "1337",
+    "Currency Symbol": "CPAY",
+  }
 ````
