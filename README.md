@@ -2,7 +2,7 @@
 
 > A Solidity project where you can store a number in a contract and retrieve it.
 
-This project make a contract on a localtestnet with truffle, the goal is to play with contract and look at how to interact with it on the front.
+This project make a contract on a local testnet with truffle, the goal is to play with contract and look at how to interact with it from the front.
 
 You have two folder : 
 
