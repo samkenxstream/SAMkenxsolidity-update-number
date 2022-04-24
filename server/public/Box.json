@@ -2630,10 +2630,18 @@
   },
   "networks": {
     "5777": {
+      "name": "Ganache",
       "events": {},
       "links": {},
       "address": "0xC8fe6b0F12cdA4e734d2335c1DBa7c3Ff6007E9B",
       "transactionHash": "0x858e7654e1d9825b19ddc1f75ed69c134f1751255742c2d11a13ae531ff5e72b"
+    },
+    "42": {
+      "name": "Kovan",
+      "events": {},
+      "links": {},
+      "address": "0x0aD09CD1bA22e2Fcd54fB2feF9d04f43a0782828",
+      "transactionHash": "0xd9fe603e4523346995f74884d3a68112d90176bfaf7b03ed16734ec74867d0d5"
     }
   },
   "schemaVersion": "3.4.7",

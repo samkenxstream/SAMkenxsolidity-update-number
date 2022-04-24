@@ -44,7 +44,8 @@ const Home: NextPage = () => {
     if (provider && !contract) {
       const account = await provider?.eth.getAccounts();
       // const networkId = await provider?.eth.net.getId();
-      const deployedNetwork = Box.networks[5777];
+      const deployedNetwork = Box.networks[42];
+      console.log(deployedNetwork);
       const instance = new provider.eth.Contract(
         Box.abi as AbiItem[],
         deployedNetwork && deployedNetwork.address
