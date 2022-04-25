@@ -34,8 +34,7 @@ If you have make some change in the Box contract, don't forget to copy the new A
 To interact with the contract, you need to be connected to the local testnet.
 
 ## Metamask
-
-Configure your metamask network like this : 
+To test locally, configure your metamask network like this : 
 ```json
   {
     "New RPC URL": "HTTP://127.0.0.1:7545",
@@ -43,3 +42,4 @@ Configure your metamask network like this :
     "Currency Symbol": "CPAY",
   }
 ````
+To test on Kovan your metamask to the Kovan network
