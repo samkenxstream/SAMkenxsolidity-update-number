@@ -43,17 +43,20 @@ const Home: NextPage = () => {
   const createContract = async () => {
     if (provider && !contract) {
       const account = await provider?.eth.getAccounts();
-      // const networkId = await provider?.eth.net.getId();
-      const deployedNetwork = Box.networks[42];
-      console.log(deployedNetwork);
-      const instance = new provider.eth.Contract(
-        Box.abi as AbiItem[],
-        deployedNetwork && deployedNetwork.address
-      );
-      setAccount(account[0]);
-      setContract(instance);
-      const response = await instance.methods.retrieve().call();
-      setStoredValue(response);
+      const networkId = await provider.eth.net.getId();
+      if (networkId == 42) {
+        const deployedNetwork = Box.networks[42];
+        const instance = new provider.eth.Contract(
+          Box.abi as AbiItem[],
+          deployedNetwork && deployedNetwork.address
+        );
+        setAccount(account[0]);
+        setContract(instance);
+        const response = await instance.methods.retrieve().call();
+        setStoredValue(response);
+      } else {
+        console.log("connected to Kovan network");
+      }
     }
   };
 
