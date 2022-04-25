@@ -4,6 +4,10 @@
 
 This project make a contract on a local testnet with truffle, the goal is to play with contract and look at how to interact with it from the front.
 
+You can test the app here : [update-number](https://vercel.com/pikooli/solidity-update-number/5QbKvhn8kMdXqEWhsnnvndZpkA3P).
+
+**Be sure to be connected to Kovan network.**
+
 You have two folder : 
 
   - server, that hold the front 
